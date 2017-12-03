@@ -19,11 +19,11 @@ pDASH = rDASHEUR.json()["result"]["price"]
 pEOS = rEOSETH.json()["result"]["price"] * pETH
 
 # === VALUE OF WALLET PER CURRENCY ===
-vBTC = pBTC * jPortfolio["BTC"]
-vBCH = pBCH * jPortfolio["BCH"]
-vETH = pETH * jPortfolio["ETH"]
-vDASH = pDASH * jPortfolio["DASH"]
-vEOS = pEOS * jPortfolio["EOS"]
+vBTC = pBTC * jPortfolio["detail"]["BTC"]["amount"]
+vBCH = pBCH * jPortfolio["detail"]["BCH"]["amount"]
+vETH = pETH * jPortfolio["detail"]["ETH"]["amount"]
+vDASH = pDASH * jPortfolio["detail"]["DASH"]["amount"]
+vEOS = pEOS * jPortfolio["detail"]["EOS"]["amount"]
 
 
 # === VALUE OF EACH CURRENCY ===

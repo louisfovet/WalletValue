@@ -1,7 +1,31 @@
 {
-  "BTC":0.29751, 
-  "BCH":1.80237,
-  "ETH":6.45911,
-  "DASH":1.70867,
-  "EOS":80.45374
+  "detail": {
+    "BTC": {
+      "name":"Bitcoin", 
+      "price":9594.6, 
+      "amount":0.29751},
+
+    "BCH": {
+      "name":"Bitcoin Cash", 
+      "price":1305.6, 
+      "amount":1.80237},
+
+    "ETH": {
+      "name":"Ethereum", 
+      "price":391.78, 
+      "amount":6.45911},
+
+    "DASH": {
+      "name":"Dash",
+      "price":659.5, 
+      "amount":1.70867},
+
+    "EOS": {
+      "name":"EOS",
+      "price":3.06, 
+      "amount":80.45374}},
+
+  "global":9111,
+  "datetime":"189156435135"
+
 }
