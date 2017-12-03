@@ -1,31 +1,35 @@
 {
   "detail": {
-    "BTC": {
-      "name":"Bitcoin", 
-      "price":9594.6, 
-      "amount":0.29751},
+    "EOS": {
+      "amount": 80.45374,
+      "name": "EOS",
+      "price": 3.00664916,
+      "value": 241.89616978985836},
 
     "BCH": {
-      "name":"Bitcoin Cash", 
-      "price":1305.6, 
-      "amount":1.80237},
-
-    "ETH": {
-      "name":"Ethereum", 
-      "price":391.78, 
-      "amount":6.45911},
+      "amount": 1.80237,
+      "name": "Bitcoin Cash",
+      "price": 1269.7,
+      "value": 2288.469189},
 
     "DASH": {
-      "name":"Dash",
-      "price":659.5, 
-      "amount":1.70867},
+      "amount": 1.70867,
+      "name": "Dash",
+      "price": 645.102,
+      "value": 1102.26643434},
 
-    "EOS": {
-      "name":"EOS",
-      "price":3.06, 
-      "amount":80.45374}},
+    "ETH": {
+      "amount": 6.45911,
+      "name": "Ethereum",
+      "price": 384.04,
+      "value": 2480.5566044},
 
-  "global":9111,
-  "datetime":"189156435135"
+    "BTC": {
+      "amount": 0.29751,
+      "name": "Bitcoin",
+      "price": 9379.9,
+      "value": 2790.614049}},
 
+  "value": 8903.802446529857,
+  "lastupdate": "2017-12-03 22:24:48"
 }
