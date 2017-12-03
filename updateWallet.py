@@ -7,6 +7,7 @@ with open('portfolio.json') as portfolio:
     jPortfolio = json.load(portfolio)
 
 # === REQUESTS CRYPTOWACH API ===
+print("Requesting Cryptowatch's API...")
 rBTCEUR = requests.get("https://api.cryptowat.ch/markets/kraken/btceur/price")
 rBCHEUR = requests.get("https://api.cryptowat.ch/markets/kraken/bcheur/price")
 rETHEUR = requests.get("https://api.cryptowat.ch/markets/kraken/etheur/price")
@@ -39,3 +40,5 @@ jPortfolio["lastupdate"] = str(datetime.datetime.now()).split('.')[0]
 # === UPDATE JSON FILE ===
 with open('portfolio.json', 'w') as portfolio:
     json.dump(jPortfolio, portfolio)
+
+print("WALLET IS NOW UP TO DATE.")
