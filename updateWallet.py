@@ -3,8 +3,17 @@ import json
 import datetime
 
 # === READS PORTFOLIO FILE ===
-with open('portfolio.json') as portfolio:
-    jPortfolio = json.load(portfolio)
+with open('portfolio.json') as rPortfolio:
+    jPortfolio = json.load(rPortfolio)
+
+# === READS HISTORY FILE ===
+with open('history.json') as rHistory:
+    jHistory = json.load(rHistory)
+    jHistory["history"].append(jPortfolio)
+
+# === UPDATE HISTORY FILE ===
+with open('history.json', 'w') as wHistory:
+    json.dump(jHistory, wHistory)
 
 # === REQUESTS CRYPTOWACH API ===
 print("Requesting Cryptowatch's API...")
@@ -38,7 +47,7 @@ jPortfolio["lastupdate"] = str(datetime.datetime.now()).split('.')[0]
 
 
 # === UPDATE JSON FILE ===
-with open('portfolio.json', 'w') as portfolio:
-    json.dump(jPortfolio, portfolio)
+with open('portfolio.json', 'w') as wPortfolio:
+    json.dump(jPortfolio, wPortfolio)
 
 print("WALLET IS NOW UP TO DATE.")
